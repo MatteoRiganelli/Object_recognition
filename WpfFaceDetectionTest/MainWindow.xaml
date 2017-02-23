@@ -1,0 +1,68 @@
+﻿<Window x:Class="WpfFaceDetectionTest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="739" Width="965.5" Loaded="Window_Loaded">
+
+    <Grid>
+        <DockPanel>
+            <Menu DockPanel.Dock="Top" Margin="6,0,-6,0">
+                <MenuItem Header="_File">
+                    <MenuItem Header="_Exit" />
+                </MenuItem>
+                <MenuItem Header="_Attiva/Disattiva Obj">
+                    <MenuItem Header="_Bicchiere Plastica Bianco" IsCheckable="True" IsChecked="True" Click="CupPLasticWhite_Click" />
+                    <MenuItem Header="_Scatola Latte" IsCheckable="True" IsChecked="True" Click="Milk_Click" />
+                    <MenuItem Header="_Tazza" IsCheckable="True" IsChecked="True" Click="Tazza_Click" />
+                    <MenuItem Header="_Banana" IsCheckable="True" IsChecked="True" Click="Banana_Click" />
+                    <MenuItem Header="_TazzaGialla" IsCheckable="True" IsChecked="True" Click="TazzaGialla_Click" />
+                </MenuItem>
+            </Menu>
+
+
+        </DockPanel>
+
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left"
+            	TextWrapping="Wrap" 
+            	Text="TextBox" Width="66" 
+            	RenderTransformOrigin="-2.392,12.875" Margin="135,356,0,331" 
+                     />
+        <TextBlock x:Name="textBlock" TextWrapping="Wrap" Text="Frame Number" Margin="48,357,1056,0" Height="26" VerticalAlignment="Top"/>
+        <Image Name="image1" Stretch="Fill" Width="640" Height="480" HorizontalAlignment="Right" Margin="0,26,22,202" RenderTransformOrigin="0.495,0.636"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="284" Margin="10,26,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="274" VerticalScrollBarVisibility="Auto"  />
+        <TextBox x:Name="textBox1_nameObj" HorizontalAlignment="Left"
+        	TextWrapping="Wrap" Width="217" 
+        	RenderTransformOrigin="-2.392,12.875" Margin="48,420,0,202" FontSize="29.333" TextDecorations="{x:Null}" FontFamily="Corbel" 
+                     />
+        <TextBox x:Name="textBox1_occurrencesBicc" HorizontalAlignment="Left"
+        	TextWrapping="Wrap" Width="59" 
+        	RenderTransformOrigin="-2.392,12.875" Margin="44,627,0,38" FontSize="29.333" TextDecorations="{x:Null}" FontFamily="Corbel" 
+                     />
+        <TextBlock x:Name="textBlock_Copy" TextWrapping="Wrap" Text="Bicchiere" Height="26" VerticalAlignment="Top" Margin="48,556,852,0"/>
+
+        <Slider x:Name="slider" Margin="25,587,852,96"/>
+        <TextBox x:Name="textBox_List" HorizontalAlignment="Left" Height="150" Margin="492,535,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="444" VerticalScrollBarVisibility="Auto"  />
+        <TextBlock x:Name="textBlock_Copy1" TextWrapping="Wrap" Height="26" VerticalAlignment="Top" Margin="135,556,765,0"><Run Text="Latte"/><LineBreak/><Run/></TextBlock>
+        <TextBox x:Name="textBox1_occurrencesLatte" HorizontalAlignment="Left"
+        	TextWrapping="Wrap" Width="60" 
+        	RenderTransformOrigin="-2.392,12.875" Margin="120,627,0,38" FontSize="29.333" TextDecorations="{x:Null}" FontFamily="Corbel" 
+                     />
+        <TextBlock x:Name="textBlock_Copy2" TextWrapping="Wrap" Height="26" VerticalAlignment="Top" Margin="217,556,704,0" Text="Tazza"/>
+        <TextBox x:Name="textBox1_occurrencesTazza" HorizontalAlignment="Left"
+        	TextWrapping="Wrap" Width="60" 
+        	RenderTransformOrigin="-2.392,12.875" Margin="205,627,0,38" FontSize="29.333" TextDecorations="{x:Null}" FontFamily="Corbel" 
+                     />
+        <TextBlock x:Name="textBlock_Copy3" TextWrapping="Wrap" Height="26" VerticalAlignment="Top" Margin="296,556,614,0" Text="Banana"/>
+        <TextBox x:Name="textBox1_occurrencesBanana" HorizontalAlignment="Left"
+        	TextWrapping="Wrap" Width="60" 
+        	RenderTransformOrigin="-2.392,12.875" Margin="284,627,0,38" FontSize="29.333" TextDecorations="{x:Null}" FontFamily="Corbel" 
+                     />
+        <TextBlock x:Name="textBlock_Copy4" TextWrapping="Wrap" Height="26" VerticalAlignment="Top" Margin="380,556,530,0" Text="Tazza2"/>
+        <TextBox x:Name="textBox1_occurrencesTazzaGialla" HorizontalAlignment="Left"
+        	TextWrapping="Wrap" Width="60" 
+        	RenderTransformOrigin="-2.392,12.875" Margin="368,627,0,38" FontSize="29.333" TextDecorations="{x:Null}" FontFamily="Corbel" 
+                     />
+
+
+
+    </Grid>
+</Window>
